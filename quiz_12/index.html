@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusive Leadership Reflection Instrument - Chapter 12</title>
+    <link rel="stylesheet" href="quiz12.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 12: Inclusive Leadership Reflection Instrument</h1>
+
+        <form id="leadershipForm">
+            <div class="intro">
+                <p><strong>Purpose:</strong> The purpose of this questionnaire is to reflect on your inclusive behaviors and challenge yourself to exhibit inclusive behaviors in your daily interactions.</p>
+                <p><strong>Instructions:</strong> The following instrument is a checklist designed to encourage you to reflect on the inclusive behaviors you exhibit in a variety of settings: meeting one-on-one with individuals, facilitating a team meeting, participating in a team meeting, and mentoring someone less experienced. In each case, you are encouraged to place a check mark in the Yes column or No column.</p>
+            </div>
+
+            <div class="checklist-container">
+                <table class="checklist-table">
+                    <thead>
+                        <tr>
+                            <th class="interaction-type">Types of Interactions</th>
+                            <th class="behavior-description">Inclusive Leadership Behaviors</th>
+                            <th class="response-column">Yes</th>
+                            <th class="response-column">No</th>
+                        </tr>
+                    </thead>
+                    <tbody id="checklist-body">
+                        <!-- Questions will be populated by JavaScript -->
+                    </tbody>
+                </table>
+                <div class="protege-definition">
+                    <p><em><strong>Note:</strong> A protégé is a person who is guided and supported by a mentor; someone who receives guidance from a more experienced person.</em></p>
+                </div>
+            </div>
+
+            <button type="submit">Calculate Scores</button>
+        </form>
+
+        <div class="result" style="display: none;">
+            <h2>Your Inclusive Leadership Results</h2>
+            
+            <div class="scoring-scale">
+                <h3>Scoring Interpretation</h3>
+                <div class="scale-container">
+                    <div class="scale-item">
+                        <div class="scale-color exemplary"></div>
+                        <p><strong>Exemplary (0-9):</strong> You exemplify many behaviors of inclusive leaders</p>
+                    </div>
+                    <div class="scale-item">
+                        <div class="scale-color developing"></div>
+                        <p><strong>Developing (10-19):</strong> You are working to become an inclusive leader</p>
+                    </div>
+                    <div class="scale-item">
+                        <div class="scale-color emerging"></div>
+                        <p><strong>Emerging (20-30):</strong> Opportunity to develop inclusive leadership behaviors</p>
+                    </div>
+                </div>
+                <p class="scale-note">Your score represents the total number of "No" responses - lower scores indicate stronger inclusive leadership behaviors.</p>
+            </div>
+
+            <div class="score-summary-card">
+                <div class="overall-score">
+                    <div class="score-circle">
+                        <span id="total-score">0</span>
+                        <small>out of 30</small>
+                    </div>
+                    <div class="score-label" id="score-interpretation">
+                        Your Performance Level
+                    </div>
+                    <div class="score-description">
+                        <p><em>Total "No" responses - lower is better</em></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="score-breakdown"></div>
+
+            <div class="charts-container">
+                <div class="chart-tabs">
+                    <button class="chart-tab active" data-chart="bar">Bar Chart</button>
+                    <button class="chart-tab" data-chart="pie">Pie Chart</button>
+                    <button class="chart-tab" data-chart="radar">Radar Chart</button>
+                </div>
+                <div class="chart-views">
+                    <div class="chart-view active" id="bar-view">
+                        <h3>Inclusive Behaviors by Category</h3>
+                        <div class="chart-container">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-view" id="pie-view">
+                        <h3>"No" Responses Distribution</h3>
+                        <div class="chart-container">
+                            <canvas id="pieChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-view" id="radar-view">
+                        <h3>"Yes" Responses Overview</h3>
+                        <div class="chart-container">
+                            <canvas id="radarChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="interpretation"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="quiz12.js"></script>
+</body>
+</html>
