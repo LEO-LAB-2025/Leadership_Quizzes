@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servant Leadership Questionnaire - Chapter 10</title>
+    <link rel="stylesheet" href="quiz10.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chapter 10: Servant Leadership Questionnaire</h1>
+
+        <form id="leadershipForm">
+            <div class="intro">
+                <p><strong>Purpose:</strong> The purpose of this questionnaire is to examine the servant leadership behaviors you exhibit.</p>
+                <p><strong>Instructions:</strong> Have a friend, colleague, or classmate read each item carefully and use the following 7-point scale to indicate the extent to which they agree or disagree with the following statements as they pertain to your leadership. In these statements, "the leader" is referring to you in a leadership capacity.</p>
+                <p class="key-scale"><strong>Key:</strong> 1 = Strongly disagree | 2 = Disagree | 3 = Disagree somewhat | 4 = Undecided | 5 = Agree somewhat | 6 = Agree | 7 = Strongly agree</p>
+            </div>
+            <div id="questions"></div>
+            <button type="submit">Calculate Scores</button>
+        </form>
+
+        <div class="result" style="display: none;">
+            <h2>Your Servant Leadership Scores</h2>
+            
+            <div class="scoring-scale">
+                <h3>Scoring Scale Interpretation</h3>
+                <div class="scale-container">
+                    <div class="scale-item">
+                        <div class="scale-color high"></div>
+                        <p><strong>High range:</strong> 23 - 28</p>
+                    </div>
+                    <div class="scale-item">
+                        <div class="scale-color moderate"></div>
+                        <p><strong>Moderate range:</strong> 14 - 22</p>
+                    </div>
+                    <div class="scale-item">
+                        <div class="scale-color low"></div>
+                        <p><strong>Low range:</strong> 4 - 13</p>
+                    </div>
+                </div>
+                <ul class="scale-note-list">
+                    <li>Scores between 23-28 mean others believe you strongly exhibit this servant leadership behavior.</li>
+                    <li>Scores between 14-22 mean you tend to exhibit this behavior in an average way.</li>
+                    <li>Scores between 4-13 mean you exhibit this behavior below the average or expected degree.</li>
+                </ul>
+            </div>
+            
+            <div id="score-breakdown"></div>
+
+            <div class="charts-container">
+                <div class="chart-tabs">
+                    <button class="chart-tab active" data-chart="radar">Radar Chart</button>
+                    <button class="chart-tab" data-chart="bar">Bar Chart</button>
+                </div>
+                <div class="chart-views">
+                    <div class="chart-view active" id="radar-view">
+                        <h3>Servant Leadership Profile</h3>
+                        <div class="chart-container">
+                            <canvas id="resultChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="chart-view" id="bar-view">
+                        <h3>Dimension Scores Comparison</h3>
+                        <div class="chart-container">
+                            <canvas id="barChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="interpretation"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="quiz10.js"></script>
+</body>
+</html>
