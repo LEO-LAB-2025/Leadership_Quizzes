@@ -46,6 +46,14 @@ p {
   margin-bottom: 1rem;
   line-height: 1.7;
 }
+
+.intro p.key-scale {
+  font-size: clamp(0.85rem, 2vw, 1.2rem);
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
 .question {
   margin-bottom: 1.5rem;
   padding: 1.25rem;
