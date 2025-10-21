@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultDiv = document.querySelector('.result');
     const scoreBreakdownDiv = document.getElementById('score-breakdown');
     const questionsDiv = document.getElementById('questions');
-    const randomFillBtn = document.getElementById('randomFillBtn');
 
     function renderQuestions() {
         let questionsHTML = '';
@@ -43,17 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         questionsDiv.innerHTML = questionsHTML;
     }
-
-    // Add random fill functionality
-    randomFillBtn.addEventListener('click', () => {
-        questions.forEach(q => {
-            const randomValue = Math.floor(Math.random() * 5) + 1; // Random value from 1-5
-            const radioButton = document.querySelector(`input[name="q${q.id}"][value="${randomValue}"]`);
-            if (radioButton) {
-                radioButton.checked = true;
-            }
-        });
-    });
 
     genderBiasForm.addEventListener('submit', e => {
         e.preventDefault();

@@ -52,6 +52,11 @@ h2 {
     margin: 0 0 1rem 0;
 }
 
+.intro p.key-scale {
+    font-size: clamp(1.05rem, 2.2vw, .95rem);
+    line-height: 1.6;
+}
+
 .intro p:last-child {
     margin-bottom: 0;
 }
@@ -125,6 +130,10 @@ button {
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
+    display: block;
+    margin: 2rem auto 0;
+    max-width: 300px;
+    width: 100%;
 }
 
 button:hover {
