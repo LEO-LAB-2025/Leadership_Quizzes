@@ -2,7 +2,7 @@
 
 LeaderLens is a set of interactive leadership self-assessment quizzes built from the chapter instruments in the book Leadership: Theory and Practice by Peter G. Northouse.
 
-Landing page:
+Link:
 https://leo-lab-2025.github.io/Leadership_Quizzes/
 
 ## About The Book
