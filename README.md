@@ -34,8 +34,6 @@ Each quiz folder corresponds to a leadership topic/chapter instrument.
 - Quiz 13: Followership Questionnaire (Chapter 13)
 - Quiz 14: Gender-Leader Bias Questionnaire (Chapter 14)
 
-Note: quiz_2 is not currently present in this repository.
-
 ## Purpose
 
 This repository is intended for leadership learning, self-reflection, classroom support, and research-oriented practice exercises.
